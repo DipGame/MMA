@@ -7,6 +7,7 @@
     <title>ПОЛИГРАФ</title>
     <link rel="stylesheet" href="fonts/Montserrat.css">
     <link rel="stylesheet" href="fonts/DINPro.css">
+    <link rel="stylesheet" href="swiper-bundle.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="invise.css">
 </head>
@@ -20,7 +21,8 @@
                     </div>
                     <img class="header__img-ugra" src="images/ugra.png" alt="ugra">
                     <img class="header__img-logo-elips" src="images/logo1.png" alt="logo1">
-                    <img class="header__img-logo-elips header__mobile-img-logo invisibility" src="images/Mask group.png" alt="logo1">
+                    <img class="header__img-logo-elips header__mobile-img-logo invisibility" src="images/Mask group.png"
+                        alt="logo1">
                     <img class="header__img-logo-title" src="images/Лого.png" alt="logo">
                     <div class="header__adress-container">
                         <div class="header__adress-container-top">
@@ -102,40 +104,115 @@
                         <img src="images/Search.svg" alt="Search">
                     </div>
                 </div>
-                <ul class="header__navigate">
-                    <li>
-                        <a href="">
-                            Главная
-                        </a>
-                    </li>
-                    <p>/</p>
-                    <li>
-                        <a href="">
-                            Размещение спортивных мероприятий
-                        </a>
-                    </li>
-                </ul>
+
                 <div class="header__mobile">
                     <div class="header__mobile-top-container">
                         <div class="header__mobile-padding">
                             <ul class="header__mobile-list">
-                                <li>
-                                    <a href="#">
-                                        КОМПАНИЯ
-                                    </a>
-                                    <img src="images/arrow.svg" alt="arrow">
+                                <li id="headerList">
+                                    <div>
+                                        <a href="#" id="headerListLink">
+                                            КОМПАНИЯ
+                                        </a>
+                                        <img src="images/arrow.svg" alt="arrow" id="headerArrow">
+                                    </div>
+                                    <ul class="header__mobile-sublist">
+                                        <li>
+                                            <a href="">
+                                                О НАС
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                ПОРТФОЛИО
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                АКЦИИ
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                ВАКАНСИИ
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                КОНТАКТЫ
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
-                                <li>
-                                    <a href="#">
-                                        УСЛУГИ
-                                    </a>
-                                    <img src="images/arrow.svg" alt="arrow">
+                                <li id="headerList">
+                                    <div>
+                                        <a href="#" id="headerListLink">
+                                            УСЛУГИ
+                                        </a>
+                                        <img src="images/arrow.svg" alt="arrow" id="headerArrow">
+                                    </div>
+                                    <ul class="header__mobile-sublist">
+                                        <li>
+                                            <a href="">
+                                                О НАС
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                ПОРТФОЛИО
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                АКЦИИ
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                ВАКАНСИИ
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                КОНТАКТЫ
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
-                                <li>
-                                    <a href="#">
-                                        ПЕЧАТИ/ШТАМПЫ
-                                    </a>
-                                    <img src="images/arrow.svg" alt="arrow">
+                                <li id="headerList">
+                                    <div>
+                                        <a href="#" id="headerListLink">
+                                            ПЕЧАТИ/ШТАМПЫ
+                                        </a>
+                                        <img src="images/arrow.svg" alt="arrow" id="headerArrow">
+                                    </div>
+                                    <ul class="header__mobile-sublist">
+                                        <li>
+                                            <a href="">
+                                                О НАС
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                ПОРТФОЛИО
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                АКЦИИ
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                ВАКАНСИИ
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                КОНТАКТЫ
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li>
                                     <a href="#">
@@ -212,8 +289,25 @@
                 </div>
             </div>
         </header>
+        <div class="header__navigate-container">
+            <ul class="header__navigate">
+                <li>
+                    <a href="">
+                        Главная
+                    </a>
+                </li>
+                <p>/</p>
+                <li>
+                    <a href="">
+                        Размещение спортивных мероприятий
+                    </a>
+                </li>
+            </ul>
+        </div>
 
-        <!-- <section class="baner" style="background-image: url('images/bg.png');">
+
+
+          <!-- <section class="baner" style="background-image: url('images/bg.png');">
             <div class="baner__container">
                 <h1>
                     ВЕЧЕР БОЕВЫХ ЕДИНОБОРСТВ<br> 20-25 ОКТЯБРЯ
@@ -227,10 +321,379 @@
                     </button>
                 </a>
             </div>
+        </section> 
+
+        <section class="advantage">
+            <div class="swiper advantageSwiper">
+                <div class="swiper-wrapper" data-swiper-autoplay="2000">
+                    <div class="swiper-slide">
+                        <div class="advantage__card">
+                            <img src="images/printing.png" alt="card">
+                            <h2>
+                                ПЕЧАТЬ БЕЗ ПОСРЕДНИКОВ
+                            </h2>
+                            <p>
+                                Печатаем сами, поэтому получается быстро и дешево
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="advantage__card">
+                            <img src="images/printing.png" alt="card">
+                            <h2>
+                                ПЕЧАТЬ БЕЗ ПОСРЕДНИКОВ
+                            </h2>
+                            <p>
+                                Печатаем сами, поэтому получается быстро и дешево
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="advantage__card">
+                            <img src="images/printing.png" alt="card">
+                            <h2>
+                                ПЕЧАТЬ БЕЗ ПОСРЕДНИКОВ
+                            </h2>
+                            <p>
+                                Печатаем сами, поэтому получается быстро и дешево
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="advantage__card">
+                            <img src="images/printing.png" alt="card">
+                            <h2>
+                                ПЕЧАТЬ БЕЗ ПОСРЕДНИКОВ
+                            </h2>
+                            <p>
+                                Печатаем сами, поэтому получается быстро и дешево
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="video-baner">
+            <img src="images/oad.gif" alt="load">
+            <iframe src="https://www.youtube.com/embed/bPSv59kxj5w?si=T8roft3aDknkOiMK" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </section>
+
+        <section class="tickets">
+            <div class="tickets__box">
+                <div class="tickets__first-container">
+                    <h2>
+                        ВЕЧЕР БОЕВЫХ ЕДИНОБОРСТВ В Г. НИЖНЕВАРТОВСК
+                    </h2>
+                    <p>
+                        В Нижневартовском ФСК «Юбилейный» 1 октября состоится турнир <span>FIGHT NIGHTS GLOBAL 52</span>
+                        по смешанным
+                        единоборствам. Всего в программе вечера состоятся более десятка поединков.
+                        <br><br>Главным событием мероприятия станет борьба в тяжелом весе между одним из самых ярких и
+                        бескомпромиссных бойцов-ударников UFC <span>Фабио Мальдонадо</span> и топовым представителем
+                        боевого самбо
+                        России <span>Михаилом Мохнаткиным</span>.
+                    </p>
+                    <button class="header__callback-btn tickets__btn-phone">
+                        ЗАКАЗАТЬ РЕКЛАМУ
+                    </button>
+                </div>
+                <div class="tickets__second-container">
+                    <h2>
+                        Купить билеты на мероприятие
+                    </h2>
+                    <button class="header__callback-btn tickets__btn-ticket">
+                        КУПИТЬ БИЛЕТЫ
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="prevFotos">
+            <div class="swiper__container" id="reviewsPhoto">
+                <div class="swiper prevSwiper">
+                    <div class="swiper-wrapper" data-swiper-autoplay="2000">
+                        <div class="swiper-slide">
+                            <img src="images/img.png" alt="kartinka">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/img (1).png" alt="kartinka">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/img (2).png" alt="kartinka">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/img.png" alt="kartinka">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/img (1).png" alt="kartinka">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/img (2).png" alt="kartinka">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper__nav-container">
+                    <div class="swiper-button-next prevFotos-swiper-button-next"></div>
+                    <div class="swiper-button-prev prevFotos-swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+
+         <section class="package">
+            <div class="package__box">
+                <h2>
+                    ПАКЕТЫ НА РАЗМЕЩЕНИЕ РЕКЛАМЫ
+                </h2>
+                <div class="package__container">
+                    <div class="package__card">
+                        <h3>
+                            ПАКЕТ №1
+                        </h3>
+                        <p class="package__card-text">
+                            Размещение рекламы (логотипа организации) в зале проведения или на октагоне.
+                        </p>
+                        <div class="package__card-container">
+                            <h4>
+                                СТОИМОСТЬ И МЕСТА ПО ЗАПРОСУ
+                            </h4>
+                            <span>
+                                Места ограничены
+                            </span>
+                        </div>
+                        <button class="order__btn">
+                            ЗАКАЗАТЬ
+                        </button>
+                    </div>
+                    <div class="package__card" style="-webkit-box-shadow: 16px 16px 0px -7px rgba(253, 67, 40, 1);
+                    -moz-box-shadow: 16px 16px 0px -7px rgba(253, 67, 40, 1);
+                    box-shadow: 16px 16px 0px -7px rgba(253, 67, 40, 1);">
+                        <h3>
+                            ПАКЕТ №2
+                        </h3>
+                        <ul>
+                            <li>
+                                <img src="images/check (28) 1.svg" alt="ok">
+                                <p class="package__card-list-text">
+                                    Размещение логотипа на спонсорском баннере мероприятия, фотозона.
+                                </p>
+                            </li>
+                            <li>
+                                <img src="images/check (28) 1.svg" alt="ok">
+                                <p class="package__card-list-text">
+                                    Размещение логотипа на спонсорском баннере мероприятия, фотозона.
+                                </p>
+                            </li>
+                            <li>
+                                <img src="images/check (28) 1.svg" alt="ok">
+                                <p class="package__card-list-text">
+                                    Размещение логотипа на спонсорском баннере мероприятия, фотозона.
+                                </p>
+                            </li>
+                            <li>
+                                <img src="images/check (28) 1.svg" alt="ok">
+                                <p class="package__card-list-text">
+                                    Размещение логотипа на спонсорском баннере мероприятия, фотозона.
+                                </p>
+                            </li>
+                            <li>
+                                <img src="images/check (28) 1.svg" alt="ok">
+                                <p class="package__card-list-text">
+                                    Размещение логотипа на спонсорском баннере мероприятия, фотозона.
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="package__card-container">
+                            <h4>
+                                70 000 ₽
+                            </h4>
+                            <span>
+                                Места ограничены
+                            </span>
+                        </div>
+                        <button class="order__btn">
+                            ЗАКАЗАТЬ
+                        </button>
+                    </div>
+                    <div class="package__card">
+                        <h3>
+                            ПАКЕТ №3
+                        </h3>
+                        <ul>
+                            <li>
+                                <img src="images/check (28) 1.svg" alt="ok">
+                                <p class="package__card-list-text">
+                                    Размещение логотипа на спонсорском баннере мероприятия, фотозона.
+                                </p>
+                            </li>
+                            <li>
+                                <img src="images/check (28) 1.svg" alt="ok">
+                                <p class="package__card-list-text">
+                                    Размещение логотипа на спонсорском баннере мероприятия, фотозона.
+                                </p>
+                            </li>
+                            <li>
+                                <img src="images/check (28) 1.svg" alt="ok">
+                                <p class="package__card-list-text">
+                                    Размещение логотипа на спонсорском баннере мероприятия, фотозона.
+                                </p>
+                            </li>
+                            <li>
+                                <img src="images/check (28) 1.svg" alt="ok">
+                                <p class="package__card-list-text">
+                                    Размещение логотипа на спонсорском баннере мероприятия, фотозона.
+                                </p>
+                            </li>
+                            <li>
+                                <img src="images/check (28) 1.svg" alt="ok">
+                                <p class="package__card-list-text">
+                                    Размещение логотипа на спонсорском баннере мероприятия, фотозона.
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="package__card-container">
+                            <h4>
+                                150 000 ₽
+                            </h4>
+                            <span>
+                                Места ограничены, максимум 5 организаций
+                            </span>
+                        </div>
+                        <button class="order__btn">
+                            ЗАКАЗАТЬ
+                        </button>
+                    </div>
+                </div>
+            </div>
         </section> -->
 
+        <section class="prodPrice">
+            <h2>
+                ФИРМЕННАЯ ПРОДУКЦИЯ
+            </h2>
+            <div class="swiper__container">
+                <div class="swiper prodSwiper">
+                    <div class="swiper-wrapper" data-swiper-autoplay="2000">
+                        <div class="swiper-slide">
+                            <div class="prodPrice__card">
+                                <img src="images/perch.png" alt="product">
+                                <h2>
+                                    Перчатки
+                                </h2>
+                                <p>
+                                    3 800 ₽
+                                </p>
+                                <button class="order__btn">
+                                    ЗАКАЗАТЬ
+                                </button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="prodPrice__card">
+                                <img src="images/perch.png" alt="product">
+                                <h2>
+                                    Перчатки
+                                </h2>
+                                <p>
+                                    3 800 ₽
+                                </p>
+                                <button class="order__btn">
+                                    ЗАКАЗАТЬ
+                                </button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="prodPrice__card">
+                                <img src="images/perch.png" alt="product">
+                                <h2>
+                                    Перчатки
+                                </h2>
+                                <p>
+                                    3 800 ₽
+                                </p>
+                                <button class="order__btn">
+                                    ЗАКАЗАТЬ
+                                </button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="prodPrice__card">
+                                <img src="images/perch.png" alt="product">
+                                <h2>
+                                    Перчатки
+                                </h2>
+                                <p>
+                                    3 800 ₽
+                                </p>
+                                <button class="order__btn">
+                                    ЗАКАЗАТЬ
+                                </button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="prodPrice__card">
+                                <img src="images/perch.png" alt="product">
+                                <h2>
+                                    Перчатки
+                                </h2>
+                                <p>
+                                    3 800 ₽
+                                </p>
+                                <button class="order__btn">
+                                    ЗАКАЗАТЬ
+                                </button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="prodPrice__card">
+                                <img src="images/perch.png" alt="product">
+                                <h2>
+                                    Перчатки
+                                </h2>
+                                <p>
+                                    3 800 ₽
+                                </p>
+                                <button class="order__btn">
+                                    ЗАКАЗАТЬ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper__nav-container">
+                    <div class="swiper-button-next prodSwiper-swiper-button-next"></div>
+                    <div class="swiper-button-prev prodSwiper-swiper-button-prev"></div>
+                </div>
+            </div>
+        </section> 
+
     </div>
+
+    <div class="overlay overlayImg">
+        <div class="popupImg">
+            <img class="popup-rec-online__close-btn" src="images/close-button 1.svg" alt="close">
+            <div class="swiper__container" id="reviewsPhoto">
+                <div class="swiper popupSwiper">
+                    <div class="swiper-wrapper" data-swiper-autoplay="2000">
+
+                    </div>
+                </div>
+                <div class="swiper__nav-container">
+                    <div class="swiper-button-next popup-swiper-button-next"></div>
+                    <div class="swiper-button-prev popup-swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="swiper-bundle.js"></script>
+    <script src="swiper.js"></script>
     <script src="scripts.js"></script>
+    <script src="popupImg.js"></script>
 </body>
 
 </html>

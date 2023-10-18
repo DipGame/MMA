@@ -37,16 +37,16 @@ if (document.querySelector('.header')) {
             headerHiddenMenuBtn.style.cssText = "background-image: url('images/menu.svg');";
             header.style.cssText = "background-color: #0D121C;";
             headerTopContainer.style.cssText = "background-color: #0D121C; border: none;";
-            headerImgLogoElips.classList.add('invisibility');
-            headerImgLogoTitle.classList.add('invisibility');
-            headerMobileImgLogo.classList.remove('invisibility');
+            // headerImgLogoElips.classList.add('invisibility');
+            // headerImgLogoTitle.classList.add('invisibility');
+            // headerMobileImgLogo.classList.remove('invisibility');
         } else {
             headerHiddenMenuBtn.style.cssText = "background-image: url('images/Меню.svg');";
             header.style.cssText = "background-color: none;";
             headerTopContainer.style.cssText = "background-color: none; border-bottom: 1px solid #D1D5DB;";
-            headerImgLogoElips.classList.remove('invisibility');
-            headerImgLogoTitle.classList.remove('invisibility');
-            headerMobileImgLogo.classList.add('invisibility');
+            // headerImgLogoElips.classList.remove('invisibility');
+            // headerImgLogoTitle.classList.remove('invisibility');
+            // headerMobileImgLogo.classList.add('invisibility');
         }
     })
 }

@@ -1740,6 +1740,8 @@ header {
     padding: 0 30px;
 }
 
+
+
 .schema__card h4 {
     font-family: Montserrat;
     font-size: 16px;
@@ -1849,6 +1851,10 @@ header {
     .schema__img-container img {
         width: 100%;
         height: auto;
+    }
+
+    .schema__card .header__phone-container {
+        margin-top: 10px;
     }
 }
 

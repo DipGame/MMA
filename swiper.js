@@ -103,3 +103,24 @@ let archiveSwiper = new Swiper(".archiveSwiper", {
         }
     }
 });
+let banerSwiper = new Swiper(".banerSwiper", {
+    // autoplay: {
+    //     delay: 5000,
+    //     disableOnInteraction: false,
+    // },
+    loop: true,
+    navigation: {
+        nextEl: '.baner-swiper-button-next',
+        prevEl: '.baner-swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+    },
+    breakpoints: {
+        300: {
+            slidesPerView: 1,
+            spaceBetween: 0
+        }
+    }
+});

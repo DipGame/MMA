@@ -1,3 +1,4 @@
+// Скрипт меню слева 
 if (document.querySelector('.header')) {
     const header = document.querySelector('.header');
     const headerHiddenBtnToggle = header.querySelector('.header__hidden-menu-btn');
@@ -10,7 +11,11 @@ if (document.querySelector('.header')) {
     const headerList = header.querySelectorAll('#headerList');
 
     window.addEventListener('resize', function () {
-        // console.log(window.screen.width);
+        if (window.screen.width > 1179) {
+            headerTopContainer.style.cssText = "background-color: none; border: none;";
+        } else {
+            headerTopContainer.style.cssText = "background-color: none; border-bottom: 1px solid #D1D5DB;";
+        }
     });
 
     headerList.forEach(el => {
@@ -26,14 +31,14 @@ if (document.querySelector('.header')) {
                 headerListLink.style.cssText = "color: #FFFFFF;";
                 headerArrow.src = 'images/arrow.svg';
             }
-          })
+        })
     });
-  
+
 
     headerHiddenBtnToggle.addEventListener('click', () => {
         headerHiddenMobileContainer.classList.toggle('header__mobile_open');
         if (headerHiddenMobileContainer.classList.contains('header__mobile_open')) {
-            
+
             headerHiddenMenuBtn.style.cssText = "background-image: url('images/menu.svg');";
             header.style.cssText = "background-color: #0D121C;";
             headerTopContainer.style.cssText = "background-color: #0D121C; border: none;";
@@ -50,3 +55,5 @@ if (document.querySelector('.header')) {
         }
     })
 }
+
+// Скрипт меню слева (КОНЕЦ)

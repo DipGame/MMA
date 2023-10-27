@@ -124,3 +124,32 @@ let banerSwiper = new Swiper(".banerSwiper", {
         }
     }
 });
+let worksSwiper = new Swiper(".worksSwiper", {
+    // autoplay: {
+    //     delay: 5000,
+    //     disableOnInteraction: false,
+    // },
+    loop: true,
+    navigation: {
+        nextEl: '.works-swiper-button-next',
+        prevEl: '.works-swiper-button-prev',
+    },
+    breakpoints: {
+        300: {
+            slidesPerView: 1,
+            spaceBetween: 0
+        },
+        380: {
+            slidesPerView: 2,
+            spaceBetween: 0
+        },
+        800: {
+            slidesPerView: 3,
+            spaceBetween: 0
+        },
+        1430: {
+            slidesPerView: 5,
+            spaceBetween: 0
+        }
+    }
+});

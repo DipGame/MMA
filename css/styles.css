@@ -494,7 +494,7 @@ header {
 
 .header__nav-list .img {
     background-size: contain;
-    background-image: url("images/arrow.svg");
+    background-image: url("../images/arrow.svg");
     width: 12px;
     height: 10px;
     margin-left: 5px;
@@ -529,7 +529,7 @@ header {
 }
 
 .header__nav-list li:hover .img {
-    background-image: url(images/arrowRed.svg);
+    background-image: url('../images/arrowRed.svg');
 }
 
 .header__advertising a,
@@ -726,7 +726,7 @@ header {
         visibility: visible;
         width: 25px;
         height: 22px;
-        background-image: url('images/Меню.svg');
+        background-image: url('../images/Меню.svg');
         background-size: contain;
         z-index: 8;
     }
@@ -1492,7 +1492,7 @@ header {
 .prodSwiper-swiper-button-prev,
 .archiveSwiper-swiper-button-prev,
 .popup-swiper-button-prev {
-    background-image: url('images/ArrowSwiperNext.png');
+    background-image: url('../images/ArrowSwiperNext.png');
     transform: rotate(180deg);
 }
 
@@ -1501,17 +1501,17 @@ header {
 .prodSwiper-swiper-button-next,
 .archiveSwiper-swiper-button-next,
 .popup-swiper-button-next {
-    background-image: url('images/ArrowSwiperNext.png');
+    background-image: url('../images/ArrowSwiperNext.png');
 }
 
 .works-swiper-button-prev,
 .baner-swiper-button-prev {
-    background-image: url('images/ArrowGrey.svg');
+    background-image: url('../images/ArrowGrey.svg');
 }
 
 .works-swiper-button-next,
 .baner-swiper-button-next {
-    background-image: url('images/ArrowGrey.svg');
+    background-image: url('../images/ArrowGrey.svg');
     transform: rotate(180deg);
 }
 
@@ -2405,7 +2405,7 @@ header {
     border-radius: 5px;
     background-color: #2F5FA6;
     padding: 50px 90px;
-    background-image: url('images/calendar.png');
+    background-image: url('../images/calendar.png');
     background-position: 100% 100%;
     background-size: 860px 627px;
 }
@@ -3105,13 +3105,13 @@ header {
     cursor: pointer;
     width: 26px;
     height: 26px;
-    background: url('images/Ellipse\ 11.png') 0 0 no-repeat;
+    background: url('../images/Ellipse\ 11.png') 0 0 no-repeat;
     margin-right: 10px;
 }
 
 /* Checked */
 .popup-rec-online__container input[type=radio]:checked+label:before {
-    background: url('images/checked.png') 0 0 no-repeat;
+    background: url('../images/checked.png') 0 0 no-repeat;
 }
 
 /* Hover */
@@ -3125,14 +3125,14 @@ header {
 }
 
 .square label:before {
-    background: url('images/squareheck.png') 0 0 no-repeat;
+    background: url('../images/squareheck.png') 0 0 no-repeat;
     width: 26px;
     height: 26px;
     margin-right: 0;
 }
 
 .square input[type=radio]:checked+label:before {
-    background: url('images/checkedSq.png') 0 0 no-repeat;
+    background: url('../images/checkedSq.png') 0 0 no-repeat;
 }
 
 .order {
@@ -3221,7 +3221,7 @@ header {
 }
 
 textarea::-webkit-resizer {
-    background: url('images/text-size\ \(3\)\ 1.png') no-repeat;
+    background: url('../images/text-size\ \(3\)\ 1.png') no-repeat;
 }
 
 .square p {

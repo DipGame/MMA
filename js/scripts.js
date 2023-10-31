@@ -55,5 +55,4 @@ if (document.querySelector('.header')) {
         }
     })
 }
-
 // Скрипт меню слева (КОНЕЦ)

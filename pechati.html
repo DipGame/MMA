@@ -422,7 +422,7 @@
 
         <!-- content -->
 
-        <!-- <section class="baner baner-pechati" style="background-image: url('images/pecahtki.png');">
+        <section class="baner baner-pechati" style="background-image: url('images/pecahtki.png');">
             <div class="baner__container">
                 <h1>
                     ИЗГОТОВЛЕНИЕ <br><span>ПЕЧАТЕЙ</span><br> В НИЖНЕВАРТОВСКЕ
@@ -620,6 +620,106 @@
             </div>
         </section>
 
+        <section class="grey-background-section">
+            <div class="order">
+                <h2>
+                    БЫСТРЫЙ ЗАКАЗ
+                </h2>
+                <form class="order__form" action="">
+                    <div class="order__input-container">
+
+                        <label class="placeholder-box">
+                            <input type="text" name="name" id="inputName" placeholder=" ">
+                            <div class="placeholder-text">ВАШЕ ИМЯ <strong style="color: red;">*</strong></div>
+                            <p class="invisibility">Минимальное количество символов - 2</p>
+                        </label>
+                        <label class="placeholder-box">
+                            <input type="text" name="phone" id="inputPhone" placeholder=" ">
+                            <div class="placeholder-text">ВАШ ТЕЛЕФОН <strong style="color: red;">*</strong></div>
+                            <p class="invisibility">Введите номер телефона</p>
+                        </label>
+                        <label class="placeholder-box">
+                            <input type="text" name="email" id="inputEmail" placeholder=" ">
+                            <div class="placeholder-text">ВАШ EMAIL <strong style="color: red;">*</strong></div>
+                            <p class="invisibility">Неверынй формат Email</p>
+                        </label>
+                        <h3>
+                            Предпочтительный способ связи
+                        </h3>
+                        <div class="order__check-input-container">
+                            <div class="popup-rec-online__container order__grid-container" id="">
+                                <input class="input__radio" type="radio" name="" id="whatsapp">
+                                <label for="whatsapp">
+                                    <div class="label__container label__container__checked">
+                                        <p>
+                                            WhatsApp
+                                        </p>
+                                    </div>
+                                </label>
+                                <input class="input__radio" type="radio" name="" id="telegram">
+                                <label for="telegram">
+                                    <div class="label__container label__container__checked">
+                                        <p>
+                                            Telegram
+                                        </p>
+                                    </div>
+                                </label>
+                                <input class="input__radio" type="radio" name="" id="phoneCheck">
+                                <label for="phoneCheck">
+                                    <div class="label__container label__container__checked">
+                                        <p>
+                                            Телефон
+                                        </p>
+                                    </div>
+                                </label>
+                                <input class="input__radio" type="radio" name="" id="emailCheck">
+                                <label for="emailCheck">
+                                    <div class="label__container label__container__checked">
+                                        <p>
+                                            Email
+                                        </p>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <textarea placeholder="Дополнительные сведения по заказу"></textarea>
+                        <div class="popup-rec-online__container square" id="">
+                            <input type="radio" name="" id="politic">
+                            <label for="politic">
+                                <div class="label__container label__container__checked">
+                                    <p>
+                                        Даю согласие на обработку данных в соответствии с <a href="">правилами
+                                            пользования
+                                            сайтом</a>
+                                    </p>
+                                </div>
+                            </label>
+                        </div>
+                        <button class="baner__btn desc-order-btn" type="submit">
+                            ОТПРАВИТЬ ЗАЯВКУ <img src="images/send.png" alt="telegram">
+                        </button>
+                    </div>
+                    <div class="drop-zone">
+
+                        <div class="drop-zone__container" id="drop_zone" ondrop="dropHandler(event);"
+                            ondragover="dragOverHandler(event);">
+                            <input id="inputFile" type="file">
+                            <img src=" images/file.png" alt="file">
+                            <p>ДОБАВИТЬ ФАЙЛЫ</p>
+                        </div>
+                        <div class="drop-zone__name-file invisibility">
+                            <div>
+                                <img src="images/attach.png" alt="attach">
+                                <p id="nameFile"></p>
+                            </div>
+                            <img class="delete-btn" src="images/close-button 2.png" alt="delete">
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </section>
+
         <section class="advantage">
             <div class="swiper advantageSwiper">
                 <div class="swiper-wrapper" data-swiper-autoplay="2000">
@@ -669,103 +769,6 @@
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
-            </div>
-        </section> -->
-
-        <section class="grey-background-section">
-            <div class="order">
-                <h2>
-                    БЫСТРЫЙ ЗАКАЗ
-                </h2>
-                <form class="order__form" action="">
-                    <div class="order__input-container">
-
-                        <label class="placeholder-box">
-                            <input required type="text">
-                            <div class="placeholder-text">ВАШЕ ИМЯ <strong style="color: red;">*</strong></div>
-                        </label>
-                        <label class="placeholder-box">
-                            <input required type="text">
-                            <div class="placeholder-text">ВАШ ТЕЛЕФОН <strong style="color: red;">*</strong></div>
-                        </label>
-                        <label class="placeholder-box">
-                            <input required type="text">
-                            <div class="placeholder-text">ВАШ EMAIL <strong style="color: red;">*</strong></div>
-                        </label>
-                        <h3>
-                            Предпочтительный способ связи
-                        </h3>
-                        <div class="order__check-input-container">
-                            <div class="popup-rec-online__container order__grid-container" id="">
-                                <input type="radio" name="" id="whatsapp">
-                                <label for="whatsapp">
-                                    <div class="label__container label__container__checked">
-                                        <p>
-                                            WhatsApp
-                                        </p>
-                                    </div>
-                                </label>
-                                <input type="radio" name="" id="telegram">
-                                <label for="telegram">
-                                    <div class="label__container label__container__checked">
-                                        <p>
-                                            Telegram
-                                        </p>
-                                    </div>
-                                </label>
-                                <input type="radio" name="" id="phoneCheck">
-                                <label for="phoneCheck">
-                                    <div class="label__container label__container__checked">
-                                        <p>
-                                            Телефон
-                                        </p>
-                                    </div>
-                                </label>
-                                <input type="radio" name="" id="emailCheck">
-                                <label for="emailCheck">
-                                    <div class="label__container label__container__checked">
-                                        <p>
-                                            Email
-                                        </p>
-                                    </div>
-                                </label>
-                            </div>
-                        </div>
-                        <textarea placeholder="Дополнительные сведения по заказу"></textarea>
-                        <div class="popup-rec-online__container square" id="">
-                            <input type="radio" name="" id="politic">
-                            <label for="politic">
-                                <div class="label__container label__container__checked">
-                                    <p>
-                                        Даю согласие на обработку данных в соответствии с <a href="">правилами
-                                            пользования
-                                            сайтом</a>
-                                    </p>
-                                </div>
-                            </label>
-                        </div>
-                        <button class="baner__btn" type="submit">
-                            ОТПРАВИТЬ ЗАЯВКУ <img src="images/send.png" alt="telegram">
-                        </button>
-                    </div>
-                    <div class="drop-zone">
-                        
-                        <div class="drop-zone__container" id="drop_zone" ondrop="dropHandler(event);"
-                            ondragover="dragOverHandler(event);">
-                            <input type="file">
-                            <img src=" images/file.png" alt="file">
-                            <p>ДОБАВИТЬ ФАЙЛЫ</p>
-                        </div>
-                        <div class="drop-zone__name-file">
-                            <div>
-                                <img src="images/attach.png" alt="attach">
-                                <p>ddsdsdasda</p>
-                            </div>
-                            <img class="" src="images/close-button 2.png" alt="delete">
-                        </div>
-                    </div>
-                </form>
-
             </div>
         </section>
 
@@ -955,11 +958,82 @@
     </div>
     <!-- /imgSliderPopup -->
 
+    <!-- overlayForm -->
+    <div class="overlay overlayForm overlay_open">
+        <div class="order">
+            <img class="popup-rec-online__close-btn" src="images/close-button 1.svg" alt="close">
+            <h2>
+                ОТПРАВИТЬ ЗАЯВКУ
+            </h2>
+            <p class="order__first-text">
+                Укажите данные которые вы хотите видеть на печати, размер печати, номер телефона для уточнения деталей.
+                <br><br>После обработки заявки мы предоставим вам макет для утверждения.
+            </p>
+            <form class="order__form" action="">
+                <div class="order__box">
+                    <div class="order__input-container">
+                        <label class="placeholder-box">
+                            <input type="text" name="name" id="inputName" placeholder=" ">
+                            <div class="placeholder-text">ВАШЕ ИМЯ <strong style="color: red;">*</strong></div>
+                            <p class="invisibility">Минимальное количество символов - 2</p>
+                        </label>
+                        <label class="placeholder-box">
+                            <input type="text" name="phone" id="inputPhone" placeholder=" ">
+                            <div class="placeholder-text">ВАШ ТЕЛЕФОН <strong style="color: red;">*</strong></div>
+                            <p class="invisibility">Введите номер телефона</p>
+                        </label>
+                        <label class="placeholder-box">
+                            <input type="text" name="email" id="inputEmail" placeholder=" ">
+                            <div class="placeholder-text">ВАШ EMAIL <strong style="color: red;">*</strong></div>
+                            <p class="invisibility">Неверынй формат Email</p>
+                        </label>
+                    </div>
+                    <div class="drop-zone">
+
+                        <div class="drop-zone__container" id="drop_zone" ondrop="dropHandler(event);"
+                            ondragover="dragOverHandler(event);">
+                            <input id="inputFile" type="file">
+                            <img src=" images/file.png" alt="file">
+                            <p>ДОБАВИТЬ ФАЙЛЫ</p>
+                        </div>
+                        <div class="drop-zone__name-file invisibility">
+                            <div>
+                                <img src="images/attach.png" alt="attach">
+                                <p id="nameFile"></p>
+                            </div>
+                            <img class="delete-btn" src="images/close-button 2.png" alt="delete">
+                        </div>
+                    </div>
+                </div>
+                <textarea placeholder="Дополнительные сведения по заказу"></textarea>
+                <div class="popup-rec-online__container square" id="">
+                    <input type="radio" name="" id="politic">
+                    <label for="politic">
+                        <div class="label__container label__container__checked">
+                            <p>
+                                Даю согласие на обработку данных в соответствии с <a href="">правилами
+                                    пользования
+                                    сайтом</a>
+                            </p>
+                        </div>
+                    </label>
+                </div>
+                <button class="baner__btn" type="submit">
+                    ОТПРАВИТЬ ЗАЯВКУ <img src="images/send.png" alt="telegram">
+                </button>
+            </form>
+
+        </div>
+    </div>
+    <!-- /overlayForm -->
+
+    <script src="js/formScript.js"></script>
     <script src="js/dropScript.js"></script>
     <script src="js/swiper-bundle.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/popupImg.js"></script>
+    <script src="js/overlayForm.js"></script>
 </body>
 
 </html>

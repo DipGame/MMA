@@ -3047,7 +3047,7 @@ header {
 }
 
 .placeholder-text {
-    display: none;
+    display: block;
     width: 100%;
     line-height: 37px;
     position: absolute;
@@ -3066,7 +3066,15 @@ header {
     text-align: left;
 }
 
-.placeholder-box input:invalid+.placeholder-text {
+.placeholder-box input:focus+.placeholder-text {
+    display: none;
+}
+
+.placeholder-box input:not(:placeholder-shown)+.placeholder-text {
+    display: none;
+}
+
+.placeholder-box input:placeholder-shown+.placeholder-text {
     display: block;
 }
 
@@ -3124,15 +3132,23 @@ header {
     filter: grayscale(100%);
 }
 
+.square label {
+    display: flex;
+    justify-content: space-between;
+}
+
 .square label:before {
     background: url('../images/squareheck.png') 0 0 no-repeat;
-    width: 26px;
+    width: 100%;
+    max-width: 26px;
     height: 26px;
     margin-right: 0;
+    z-index: 20;
 }
 
 .square input[type=radio]:checked+label:before {
     background: url('../images/checkedSq.png') 0 0 no-repeat;
+    z-index: 20;
 }
 
 .order {
@@ -3158,6 +3174,7 @@ header {
 .order__form {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .order__input-container {
@@ -3209,6 +3226,8 @@ header {
     letter-spacing: 0em;
     text-align: left;
     border: 1px solid rgba(4, 184, 224, 1);
+    height: 85px;
+    max-height: 500px;
 }
 
 .order textarea:focus {
@@ -3232,7 +3251,6 @@ textarea::-webkit-resizer {
     letter-spacing: 0em;
     text-align: left;
     margin-left: 15px;
-    max-width: 485px;
 }
 
 .square a {
@@ -3273,6 +3291,10 @@ textarea::-webkit-resizer {
     position: relative;
     cursor: pointer;
 }
+
+/* .drop-zone__container:hover {
+    background-color: rgba(253, 67, 40, 1);
+} */
 
 .drop-zone__container p {
     font-family: DIN Pro;
@@ -3334,4 +3356,141 @@ textarea::-webkit-resizer {
     width: 100%;
     height: 100%;
     border: 1px solid red;
+}
+
+@media (max-width: 956px) {
+    .order__form {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 736px) {
+    .order {
+        padding: 70px 20px;
+    }
+}
+
+@media (max-width: 572px) {
+    .order__grid-container {
+        grid-template-columns: auto auto;
+        gap: 10px 20px;
+        justify-content: center;
+    }
+
+    .order h2 {
+        font-family: DIN Pro;
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 52px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .square p {
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .square a {
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+}
+
+.placeholder-box .input__err {
+    border: 1px solid rgba(253, 67, 40, 1);
+    color: rgba(253, 67, 40, 1);
+}
+
+.placeholder-box .input__err:focus {
+    outline: none;
+    border-bottom: 4px solid rgba(253, 67, 40, 1);
+}
+
+.placeholder-box p {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FD4328;
+    position: absolute;
+    bottom: -20px;
+}
+
+@media (max-width: 496px) {
+    .placeholder-box p {
+        font-size: 10px;
+    }
+}
+
+.overlayForm .order {
+    -webkit-box-shadow: 22px 22px 0px -7px rgba(75, 85, 99, 1);
+    -moz-box-shadow: 22px 22px 0px -7px rgba(75, 85, 99, 1);
+    box-shadow: 22px 22px 0px -7px rgba(75, 85, 99, 1);
+    padding: 100px 80px;
+    margin: auto;
+    max-width: 850px;
+    position: relative;
+}
+
+.overlayForm .popup-rec-online__close-btn {
+    position: absolute;
+    object-fit: contain;
+    width: 25px;
+    height: 25px;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.overlayForm .order__form {
+    flex-direction: column;
+}
+
+.order__first-text {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 22px;
+    max-width: 580px;
+}
+
+.order__box {
+    display: flex;
+    gap: 20px;
+}
+
+.order__box .placeholder-box input {
+    max-width: 360px;
+}
+
+.order__box .drop-zone {
+    max-width: 250px;
+}
+
+.order__box .drop-zone__container {
+    height: 210px;
+}
+
+.overlayForm textarea {
+    margin-top: 0;
+    max-width: 690px;
+}
+
+.overlayForm .baner__btn {
+    margin: 0 auto;
 }

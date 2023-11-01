@@ -153,3 +153,20 @@ let worksSwiper = new Swiper(".worksSwiper", {
         }
     }
 });
+
+let swiper = new Swiper(".detailSwiper", {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+});
+let swiper2 = new Swiper(".detailSwiper2", {
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".detail-swiper-button-next",
+        prevEl: ".detail-swiper-button-prev",
+    },
+    thumbs: {
+        swiper: swiper,
+    },
+});

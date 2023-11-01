@@ -7,9 +7,9 @@
     <title>ПОЛИГРАФ</title>
     <link rel="stylesheet" href="fonts/Montserrat.css">
     <link rel="stylesheet" href="fonts/DINPro.css">
-    <link rel="stylesheet" href="swiper-bundle.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="invise.css">
+    <link rel="stylesheet" href="css/swiper-bundle.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/invise.css">
 </head>
 
 <body>
@@ -55,7 +55,7 @@
                             +7 912 934 8889
                         </a>
                     </div>
-                    <button class="header__callback-btn">
+                    <button class="header__callback-btn" id="openOverlayForm">
                         Заказать звонок
                     </button>
                 </div>
@@ -372,7 +372,7 @@
                                 <a href="#"><img src="images/Whatsappsvg.png" alt="Whatsappsvg"></a>
                             </div>
                         </div>
-                        <button class="header__callback-btn">
+                        <button class="header__callback-btn" id="openOverlayForm">
                             Заказать звонок
                         </button>
                         <div class="header__adress-container">
@@ -403,7 +403,7 @@
         <!-- /header -->
 
         <!-- хлебные крошки -->
-        <!-- <div class="header__navigate-container">
+        <div class="header__navigate-container">
             <ul class="header__navigate">
                 <li>
                     <a href="">
@@ -417,7 +417,7 @@
                     </a>
                 </li>
             </ul>
-        </div> -->
+        </div>
         <!-- /хлебные крошки -->
 
         <!-- content -->
@@ -713,71 +713,71 @@
                     Среди наших клиентов:
                 </h2>
             </div>
-                <div class="swiper__container">
-                    <div class="swiper worksSwiper">
-                        <div class="swiper-wrapper" data-swiper-autoplay="2000">
-                            <div class="swiper-slide">
-                                <a href="">
-                                    НАЗВАНИЕ
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="">
-                                    НАЗВАНИЕ ОРГАНИЗАЦИИ
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="">
-                                    НАЗВАНИЕ
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="">
-                                    НАЗВАНИЕ
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="">
-                                    НАЗВАНИЕ ОРГАНИЗАЦИИ
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="">
-                                    НАЗВАНИЕ
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="">
-                                    НАЗВАНИЕ
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="">
-                                    НАЗВАНИЕ ОРГАНИЗАЦИИ
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="">
-                                    НАЗВАНИЕ
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="">
-                                    НАЗВАНИЕ
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="">
-                                    НАЗВАНИЕ
-                                </a>
-                            </div>
+            <div class="swiper__container">
+                <div class="swiper worksSwiper">
+                    <div class="swiper-wrapper" data-swiper-autoplay="2000">
+                        <div class="swiper-slide">
+                            <a href="">
+                                НАЗВАНИЕ
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                НАЗВАНИЕ ОРГАНИЗАЦИИ
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                НАЗВАНИЕ
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                НАЗВАНИЕ
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                НАЗВАНИЕ ОРГАНИЗАЦИИ
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                НАЗВАНИЕ
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                НАЗВАНИЕ
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                НАЗВАНИЕ ОРГАНИЗАЦИИ
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                НАЗВАНИЕ
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                НАЗВАНИЕ
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                НАЗВАНИЕ
+                            </a>
                         </div>
                     </div>
-                    <div class="swiper__nav-container">
-                        <div class="swiper-button-next works-swiper-button-next"></div>
-                        <div class="swiper-button-prev works-swiper-button-prev"></div>
-                    </div>
                 </div>
+                <div class="swiper__nav-container">
+                    <div class="swiper-button-next works-swiper-button-next"></div>
+                    <div class="swiper-button-prev works-swiper-button-prev"></div>
+                </div>
+            </div>
         </section>
 
         <!-- /content -->
@@ -966,10 +966,92 @@
     </div>
     <!-- /imgSliderPopup -->
 
-    <script src="swiper-bundle.js"></script>
-    <script src="swiper.js"></script>
-    <script src="scripts.js"></script>
-    <script src="popupImg.js"></script>
+    <!-- overlayForm -->
+    <div class="overlay overlayForm">
+        <div class="order">
+            <img class="popup-rec-online__close-btn" src="images/close-button 1.svg" alt="close">
+            <h2 class="order__title">
+                БЫСТРЫЙ ЗАКАЗ
+            </h2>
+            <div class="order__container-good invisibility">
+                <h2>
+                    <span>СПАСИБО!</span> ЗА ВАШУ ЗАЯВКУ
+                </h2>
+                <h3>
+                    СКОРО МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ СОГЛАСОВАНИЯ ДЕТАЛЕЙ
+                </h3>
+                <button class="header__callback-btn order__close-btn" id="closeOverlayFormGood">
+                    ЗАКРЫТЬ
+                </button>
+            </div>
+            <p class="order__first-text">
+                Укажите данные которые вы хотите видеть на печати, размер печати, номер телефона для уточнения деталей.
+                <br><br>После обработки заявки мы предоставим вам макет для утверждения.
+            </p>
+            <form class="order__form" action="">
+                <div class="order__box">
+                    <div class="order__input-container">
+                        <label class="placeholder-box">
+                            <input type="text" name="name" id="inputName" placeholder=" ">
+                            <div class="placeholder-text">ВАШЕ ИМЯ <strong style="color: red;">*</strong></div>
+                            <p class="invisibility">Минимальное количество символов - 2</p>
+                        </label>
+                        <label class="placeholder-box">
+                            <input type="text" name="phone" id="inputPhone" placeholder=" ">
+                            <div class="placeholder-text">ВАШ ТЕЛЕФОН <strong style="color: red;">*</strong></div>
+                            <p class="invisibility">Введите номер телефона</p>
+                        </label>
+                        <label class="placeholder-box">
+                            <input type="text" name="email" id="inputEmail" placeholder=" ">
+                            <div class="placeholder-text">ВАШ EMAIL <strong style="color: red;">*</strong></div>
+                            <p class="invisibility">Неверынй формат Email</p>
+                        </label>
+                    </div>
+                    <div class="drop-zone drop-zone-popup">
+
+                        <div class="drop-zone__container" id="drop_zone" ondrop="dropHandler(event);"
+                            ondragover="dragOverHandler(event);">
+                            <input id="inputFile" type="file">
+                            <img src=" images/file.png" alt="file">
+                            <p>ДОБАВИТЬ ФАЙЛЫ</p>
+                        </div>
+                        <div class="drop-zone__name-file invisibility">
+                            <div>
+                                <img src="images/attach.png" alt="attach">
+                                <p id="nameFile"></p>
+                            </div>
+                            <img class="delete-btn" src="images/close-button 2.png" alt="delete">
+                        </div>
+                    </div>
+                </div>
+                <textarea placeholder="Дополнительные сведения по заказу"></textarea>
+                <div class="popup-rec-online__container square" id="">
+                    <input type="radio" name="" id="politic-popup">
+                    <label for="politic-popup">
+                        <div class="label__container label__container__checked">
+                            <p>
+                                Даю согласие на обработку данных в соответствии с <a href="">правилами
+                                    пользования
+                                    сайтом</a>
+                            </p>
+                        </div>
+                    </label>
+                </div>
+                <button class="baner__btn" type="submit">
+                    ОТПРАВИТЬ ЗАЯВКУ <img src="images/send.png" alt="telegram">
+                </button>
+            </form>
+
+        </div>
+    </div>
+    <!-- /overlayForm -->
+
+    <script src="js/formScript.js"></script>
+    <script src="js/dropScript.js"></script>
+    <script src="js/swiper-bundle.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/popupImg.js"></script>
 </body>
 
 </html>

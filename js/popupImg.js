@@ -14,6 +14,12 @@ function overlayClose() {
 }
 
 window.addEventListener('click', (e) => {
+    if (e.target.classList.contains('overlay')) {
+        overlayClose();
+    }
+})
+
+window.addEventListener('click', (e) => {
     if (e.target.alt === 'kartinka') { // По Alt определеям картинки, которые нужно вывести в слайдер попапа
         let imageArr = e.target.offsetParent.offsetParent.childNodes;
         let arr = [];
@@ -25,7 +31,7 @@ window.addEventListener('click', (e) => {
                 let copy = el.cloneNode(true);
                 arr.push(copy);
                 popupSwiperWrapper.appendChild(copy);
-                
+
             }
         })
         var numIdImg = e.target.offsetParent.id;
@@ -46,7 +52,6 @@ window.addEventListener('click', (e) => {
         })
         window.addEventListener('click', (e) => {
             if (e.target.classList.contains('overlay')) {
-                overlayClose();
                 popupSwiper.destroy(true, true);
             }
         })

@@ -1,3 +1,35 @@
+// Начало Скрипта открытие оверлея формы
+if (document.querySelector('.overlayForm')) {
+    const overlayForm = document.querySelector('.overlayForm');
+    const popupClose = overlayForm.querySelector('.popup-rec-online__close-btn');
+    const orderCloseBtn = overlayForm.querySelector('.order__close-btn');
+
+    function overlayFormOpen() {
+        overlayForm.classList.add('overlay_open');
+    }
+
+    function overlayFormClose() {
+        overlayForm.classList.remove('overlay_open');
+    }
+
+    popupClose.addEventListener('click', () => {
+        overlayFormClose();
+    })
+
+    orderCloseBtn.addEventListener('click', () => {
+        overlayFormClose();
+    })
+
+    window.addEventListener('click', (e) => {
+        if (e.target.id === 'openOverlayForm') {
+            overlayFormOpen();
+        }  if (e.target.classList.contains('overlay')) {
+            overlayFormClose();
+        }
+    })
+}
+// Закрытие Скрипта открытие оверлея формы
+
 // Начало Скрипта маски телефона
 window.addEventListener("DOMContentLoaded", function () {
     [].forEach.call(document.querySelectorAll('#inputPhone'), function (input) {
@@ -46,6 +78,10 @@ if (document.querySelector('.order')) {
         const inputRadio = element.querySelectorAll('.input__radio');
         const inputText = element.querySelector('textarea');
         const inputPolitic = element.querySelector('#politic');
+        const inputPoliticPopup = element.querySelector('#politic-popup');
+        const orderContainerGood = element.querySelector('.order__container-good');
+        const orderTitle = element.querySelector('.order__title');
+        const orderFirstText = element.querySelector('.order__first-text');
 
         function appendRemoveBtn() { // перемещение кнопки в зависимости от ширины экрана
             if (subBtn.classList.contains('desc-order-btn')) {
@@ -182,11 +218,20 @@ if (document.querySelector('.order')) {
         });
 
         function checkPolitic() {
-            if (inputPolitic.checked) {
+            if (inputPolitic || inputPoliticPopup) {
                 return true;
             } else {
                 return false;
             }
+        }
+
+        function handleGoodSub() {
+            orderTitle.classList.add('invisibility');
+            form.classList.add('invisibility');
+            if (element.querySelector('.order__first-text')) {
+                orderFirstText.classList.add('invisibility');
+            }
+            orderContainerGood.classList.remove('invisibility');
         }
 
         form.addEventListener('submit', (e) => {
@@ -209,6 +254,7 @@ if (document.querySelector('.order')) {
                         })
                     }
                 })
+                handleGoodSub();
                 // let formData = new FormData();
                 // formData.append('name', inputName.value);
                 // formData.append('phone', inputPhone.value);

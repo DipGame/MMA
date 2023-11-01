@@ -7,22 +7,24 @@
     <title>ПОЛИГРАФ</title>
     <link rel="stylesheet" href="fonts/Montserrat.css">
     <link rel="stylesheet" href="fonts/DINPro.css">
-    <link rel="stylesheet" href="swiper-bundle.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="invise.css">
+    <link rel="stylesheet" href="css/swiper-bundle.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/invise.css">
 </head>
 
 <body>
     <div class="page">
+        <!-- header -->
         <header class="header">
             <div class="header__box">
                 <div class="header__top-container">
                     <div class="header__hidden-menu-btn">
                     </div>
-                    <!-- <img class="header__img-ugra" src="images/ugra.png" alt="ugra">
-                    <img class="header__img-logo-elips" src="images/logo1.png" alt="logo1">
+                    <!-- <img class="header__img-ugra" src="images/ugra.png" alt="ugra"> -->
+                    <img class="header__img-logo-elips header__img-logo-elips-desc" src="images/Лого (1).png"
+                        alt="logo1">
                     <img class="header__img-logo-elips header__mobile-img-logo invisibility" src="images/Mask group.png"
-                        alt="logo1"> -->
+                        alt="logo1">
                     <!-- <img class="header__img-logo-title" src="images/Лого.png" alt="logo"> -->
                     <div class="header__adress-container">
                         <div class="header__adress-container-top">
@@ -53,62 +55,171 @@
                             +7 912 934 8889
                         </a>
                     </div>
-                    <!-- <button class="header__callback-btn">
+                    <button class="header__callback-btn" id="openOverlayForm">
                         Заказать звонок
-                    </button> -->
+                    </button>
                 </div>
-                <!-- <div class="header__bottom-container">
+                <div class="header__bottom-container">
                     <nav class="header__nav">
                         <ul class="header__nav-list">
                             <li>
-                                <a href="#">
-                                    КОМПАНИЯ
-                                </a>
-                                <img src="images/arrow.svg" alt="arrow">
+                                <div class="header__nav-list-container">
+                                    <a href="#">
+                                        КОМПАНИЯ
+                                    </a>
+                                    <div class="img"></div>
+                                </div>
+                                <div class="header__nav-line"></div>
+                                <div class="header__nav-line"></div>
+                                <ul class="header__mobile-sublist">
+                                    <li>
+                                        <a href="">
+                                            О НАС
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            ПОРТФОЛИО
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            АКЦИИ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            ВАКАНСИИ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            КОНТАКТЫ
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
                             <li>
-                                <a href="#">
-                                    УСЛУГИ
-                                </a>
-                                <img src="images/arrow.svg" alt="arrow">
+                                <div class="header__nav-list-container">
+                                    <a href="#">
+                                        УСЛУГИ
+                                    </a>
+                                    <div class="img"></div>
+                                </div>
+                                <div class="header__nav-line"></div>
+                                <div class="header__nav-line"></div>
+                                <ul class="header__mobile-sublist">
+                                    <li>
+                                        <a href="">
+                                            О НАС
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            ПОРТФОЛИО
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            АКЦИИ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            ВАКАНСИИ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            КОНТАКТЫ
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
                             <li>
-                                <a href="#">
-                                    ПЕЧАТИ/ШТАМПЫ
-                                </a>
-                                <img src="images/arrow.svg" alt="arrow">
+                                <div class="header__nav-list-container">
+                                    <a href="#">
+                                        ПЕЧАТИ/ШТАМПЫ
+                                    </a>
+                                    <div class="img"></div>
+                                </div>
+                                <div class="header__nav-line"></div>
+                                <div class="header__nav-line"></div>
+                                <ul class="header__mobile-sublist">
+                                    <li>
+                                        <a href="">
+                                            О НАС
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            ПОРТФОЛИО
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            АКЦИИ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            ВАКАНСИИ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            КОНТАКТЫ
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
                             <li>
-                                <a href="#">
-                                    АКЦИИ
-                                </a>
+                                <div class="header__nav-list-container">
+                                    <a href="#">
+                                        АКЦИИ
+                                    </a>
+                                </div>
+                                <div class="header__nav-line"></div>
+                                <div class="header__nav-line"></div>
                             </li>
                             <li>
-                                <a href="#">
-                                    ПОРТФОЛИО
-                                </a>
+                                <div class="header__nav-list-container">
+                                    <a href="#">
+                                        ПОРТФОЛИО
+                                    </a>
+                                </div>
+                                <div class="header__nav-line"></div>
+                                <div class="header__nav-line"></div>
                             </li>
                             <li>
-                                <a href="#">
-                                    КОНТАКТЫ
-                                </a>
+                                <div class="header__nav-list-container">
+                                    <a href="#">
+                                        КОНТАКТЫ
+                                    </a>
+                                </div>
+                                <div class="header__nav-line"></div>
+                                <div class="header__nav-line"></div>
                             </li>
                             <li class="header__advertising">
-                                <a href="#">
-                                    РЕКЛАМА НА UFC
-                                </a>
+                                <div class="header__nav-list-container">
+                                    <a href="#">
+                                        РЕКЛАМА НА UFC
+                                    </a>
+                                </div>
+                                <div class="header__nav-line"></div>
+                                <div class="header__nav-line"></div>
                             </li>
                         </ul>
                     </nav>
                     <div class="header__search-container">
                         <img src="images/Search.svg" alt="Search">
                     </div>
-                </div> -->
+                </div>
 
                 <div class="header__mobile">
                     <div class="header__mobile-top-container">
                         <div class="header__mobile-padding">
-                            <!-- <ul class="header__mobile-list">
+                            <ul class="header__mobile-list">
                                 <li id="headerList">
                                     <div>
                                         <a href="#" id="headerListLink">
@@ -238,7 +349,7 @@
                             <div class="header__mobile-search-container">
                                 <input type="text" placeholder="ПОИСК ПО САЙТУ">
                                 <img src="images/Search white.svg" alt="search">
-                            </div> -->
+                            </div>
                         </div>
                     </div>
                     <div class="header__mobile-bottom-container">
@@ -261,9 +372,9 @@
                                 <a href="#"><img src="images/Whatsappsvg.png" alt="Whatsappsvg"></a>
                             </div>
                         </div>
-                        <!-- <button class="header__callback-btn">
+                        <button class="header__callback-btn" id="openOverlayForm">
                             Заказать звонок
-                        </button> -->
+                        </button>
                         <div class="header__adress-container">
                             <div class="header__adress-container-top">
                                 <img src="images/map.svg" alt="punkt">
@@ -289,7 +400,10 @@
                 </div>
             </div>
         </header>
-        <!-- <div class="header__navigate-container">
+        <!-- /header -->
+
+        <!-- хлебные крошки -->
+        <div class="header__navigate-container">
             <ul class="header__navigate">
                 <li>
                     <a href="">
@@ -303,7 +417,8 @@
                     </a>
                 </li>
             </ul>
-        </div> -->
+        </div>
+        <!-- /хлебные крошки -->
 
 
 
@@ -384,7 +499,10 @@
 
         <section class="video-baner">
             <img src="images/oad.gif" alt="load">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/tyBFc_NgkEE?si=GUkHPRKfjZXjoGUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tyBFc_NgkEE?si=GUkHPRKfjZXjoGUQ"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         </section>
 
         <section class="tickets">
@@ -394,10 +512,11 @@
                         ТУРНИР UGRA FIGHTING CHAMPIONSHIP в г. Нижневартовске .
                     </h2>
                     <p>
-                        17 ноября 2023 г. в 20.00, в Нижневартовске состоится 2 турнир <span>UGRA FIGHTING CHAMPIONSHIP.</span>
+                        17 ноября 2023 г. в 20.00, в Нижневартовске состоится 2 турнир <span>UGRA FIGHTING
+                            CHAMPIONSHIP.</span>
                         В программе мероприятия более десятка зрелищных поединков!<br><br>
-                         
-                        Главным событием мероприятия станет борьба между яркими и бескомпромиссными бойцами: 
+
+                        Главным событием мероприятия станет борьба между яркими и бескомпромиссными бойцами:
                         <span>Илья Салихов</span> и <span>Ибрагим Мирзаев.</span>
                     </p>
                     <!-- <button class="header__callback-btn tickets__btn-phone">
@@ -1210,6 +1329,7 @@
             </div>
         </section> -->
 
+        <!-- footer -->
         <footer class="footer">
             <div class="footer__top-container">
                 <div class="footer__box">
@@ -1217,7 +1337,7 @@
                         <h2>
                             УСЛУГИ
                         </h2>
-                        <ul>
+                        <ul class="footer__list">
                             <li>
                                 <a href="#">
                                     Полиграфия
@@ -1247,9 +1367,9 @@
                     </div>
                     <div class="footer__container">
                         <h2>
-                            УСЛУГИ
+                            ПЕЧАТИ/ШТАМПЫ
                         </h2>
-                        <ul>
+                        <ul class="footer__list">
                             <li>
                                 <a href="#">
                                     Полиграфия
@@ -1279,9 +1399,9 @@
                     </div>
                     <div class="footer__container">
                         <h2>
-                            УСЛУГИ
+                            КОМПАНИЯ
                         </h2>
-                        <ul>
+                        <ul class="footer__list">
                             <li>
                                 <a href="#">
                                     Полиграфия
@@ -1370,9 +1490,11 @@
                 </p>
             </div>
         </footer>
+        <!-- /footer -->
 
     </div>
 
+    <!-- imgSliderPopup -->
     <div class="overlay overlayImg">
         <div class="popupImg">
             <img class="popup-rec-online__close-btn" src="images/close-button 1.svg" alt="close">
@@ -1389,11 +1511,94 @@
             </div>
         </div>
     </div>
+    <!-- /imgSliderPopup -->
 
-    <script src="swiper-bundle.js"></script>
-    <script src="swiper.js"></script>
-    <script src="scripts.js"></script>
-    <script src="popupImg.js"></script>
+    <!-- overlayForm -->
+    <div class="overlay overlayForm">
+        <div class="order">
+            <img class="popup-rec-online__close-btn" src="images/close-button 1.svg" alt="close">
+            <h2 class="order__title">
+                БЫСТРЫЙ ЗАКАЗ
+            </h2>
+            <div class="order__container-good invisibility">
+                <h2>
+                    <span>СПАСИБО!</span> ЗА ВАШУ ЗАЯВКУ
+                </h2>
+                <h3>
+                    СКОРО МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ СОГЛАСОВАНИЯ ДЕТАЛЕЙ
+                </h3>
+                <button class="header__callback-btn order__close-btn" id="closeOverlayFormGood">
+                    ЗАКРЫТЬ
+                </button>
+            </div>
+            <p class="order__first-text">
+                Укажите данные которые вы хотите видеть на печати, размер печати, номер телефона для уточнения деталей.
+                <br><br>После обработки заявки мы предоставим вам макет для утверждения.
+            </p>
+            <form class="order__form" action="">
+                <div class="order__box">
+                    <div class="order__input-container">
+                        <label class="placeholder-box">
+                            <input type="text" name="name" id="inputName" placeholder=" ">
+                            <div class="placeholder-text">ВАШЕ ИМЯ <strong style="color: red;">*</strong></div>
+                            <p class="invisibility">Минимальное количество символов - 2</p>
+                        </label>
+                        <label class="placeholder-box">
+                            <input type="text" name="phone" id="inputPhone" placeholder=" ">
+                            <div class="placeholder-text">ВАШ ТЕЛЕФОН <strong style="color: red;">*</strong></div>
+                            <p class="invisibility">Введите номер телефона</p>
+                        </label>
+                        <label class="placeholder-box">
+                            <input type="text" name="email" id="inputEmail" placeholder=" ">
+                            <div class="placeholder-text">ВАШ EMAIL <strong style="color: red;">*</strong></div>
+                            <p class="invisibility">Неверынй формат Email</p>
+                        </label>
+                    </div>
+                    <div class="drop-zone drop-zone-popup">
+
+                        <div class="drop-zone__container" id="drop_zone" ondrop="dropHandler(event);"
+                            ondragover="dragOverHandler(event);">
+                            <input id="inputFile" type="file">
+                            <img src=" images/file.png" alt="file">
+                            <p>ДОБАВИТЬ ФАЙЛЫ</p>
+                        </div>
+                        <div class="drop-zone__name-file invisibility">
+                            <div>
+                                <img src="images/attach.png" alt="attach">
+                                <p id="nameFile"></p>
+                            </div>
+                            <img class="delete-btn" src="images/close-button 2.png" alt="delete">
+                        </div>
+                    </div>
+                </div>
+                <textarea placeholder="Дополнительные сведения по заказу"></textarea>
+                <div class="popup-rec-online__container square" id="">
+                    <input type="radio" name="" id="politic-popup">
+                    <label for="politic-popup">
+                        <div class="label__container label__container__checked">
+                            <p>
+                                Даю согласие на обработку данных в соответствии с <a href="">правилами
+                                    пользования
+                                    сайтом</a>
+                            </p>
+                        </div>
+                    </label>
+                </div>
+                <button class="baner__btn" type="submit">
+                    ОТПРАВИТЬ ЗАЯВКУ <img src="images/send.png" alt="telegram">
+                </button>
+            </form>
+
+        </div>
+    </div>
+    <!-- /overlayForm -->
+    <script src="js/popupImg.js"></script>
+    <script src="js/formScript.js"></script>
+    <script src="js/dropScript.js"></script>
+    <script src="js/swiper-bundle.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- <script src="js/popupImg.js"></script> -->
 </body>
 
 </html>

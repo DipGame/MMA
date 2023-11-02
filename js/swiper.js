@@ -155,10 +155,17 @@ let worksSwiper = new Swiper(".worksSwiper", {
 });
 
 let swiper = new Swiper(".detailSwiper", {
-    spaceBetween: 10,
-    slidesPerView: 4,
     freeMode: true,
     watchSlidesProgress: true,
+    breakpoints: {
+        300: {
+            slidesPerView: 4,
+            spaceBetween: 0
+        },
+        616: {
+            slidesPerView: 6,
+        }
+    }
 });
 let swiper2 = new Swiper(".detailSwiper2", {
     spaceBetween: 10,
@@ -169,4 +176,24 @@ let swiper2 = new Swiper(".detailSwiper2", {
     thumbs: {
         swiper: swiper,
     },
+});
+
+let descriptionSwiper = new Swiper(".descriptionSwiper", {
+    // autoplay: {
+    //     delay: 5000,
+    //     disableOnInteraction: false,
+    // },
+    loop: false,
+    navigation: {
+        nextEl: '.works-swiper-button-next',
+        prevEl: '.works-swiper-button-prev',
+    },
+    breakpoints: {
+        300: {
+            slidesPerView: 1,
+        },
+        615: {
+            slidesPerView: "auto",
+        },
+    }
 });

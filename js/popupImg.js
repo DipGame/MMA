@@ -43,7 +43,6 @@ window.addEventListener('click', (e) => {
                 nextEl: '.popup-swiper-button-next',
                 prevEl: '.popup-swiper-button-prev',
             },
-            loop: true,
         });
         overlayOpen();
         popupClose.addEventListener('click', () => {

@@ -487,6 +487,13 @@ header h1 {
     max-width: 190px;
     height: 50px;
     text-align: center;
+    transition: all .5s;
+}
+
+.header__callback-btn:hover {
+    color: #FFF;
+    background-color: #FD4328;
+    transition: all .5s;
 }
 
 .header__bottom-container {
@@ -1158,12 +1165,20 @@ header h1 {
     color: #FFFFFF;
     border: none;
     background-color: #FD4328;
+    border: 1px solid #FD4328;
     width: 100%;
     max-width: 220px;
     height: 60px;
     text-align: center;
     border-radius: 7px;
     margin-top: 40px;
+    transition: all .5s;
+}
+
+.baner__btn:hover {
+    background-color: #FFF;
+    color: #FD4328;
+    transition: all .5s;
 }
 
 @media (max-width: 892px) {
@@ -1365,6 +1380,11 @@ header h1 {
     height: 60px;
 }
 
+.tickets__btn-phone:hover {
+    color: #FD4328;
+    background: none;
+}
+
 .tickets__second-container {
     width: 100%;
     max-width: 410px;
@@ -1511,7 +1531,6 @@ header h1 {
 }
 
 .prevFotos-swiper-button-prev,
-.prodSwiper-swiper-button-prev,
 .archiveSwiper-swiper-button-prev,
 .popup-swiper-button-prev {
     background-image: url('../images/ArrowSwiperNext.png');
@@ -1520,20 +1539,31 @@ header h1 {
 
 .prevFotos-swiper-button-next,
 .baner-swiper-button-next,
-.prodSwiper-swiper-button-next,
 .archiveSwiper-swiper-button-next,
 .popup-swiper-button-next {
     background-image: url('../images/ArrowSwiperNext.png');
 }
 
+.examples .prevFotos-swiper-button-prev {
+    background-image: url('../images/ArrowGrey.svg');
+    transform: rotate(360deg);
+}
+
+.examples .prevFotos-swiper-button-next {
+    background-image: url('../images/ArrowGrey.svg');
+    transform: rotate(180deg);
+}
+
 .works-swiper-button-prev,
 .detail-swiper-button-prev,
+.prodSwiper-swiper-button-prev,
 .baner-swiper-button-prev {
     background-image: url('../images/ArrowGrey.svg');
 }
 
 .works-swiper-button-next,
 .detail-swiper-button-next,
+.prodSwiper-swiper-button-next,
 .baner-swiper-button-next {
     background-image: url('../images/ArrowGrey.svg');
     transform: rotate(180deg);
@@ -1727,11 +1757,19 @@ header h1 {
     background-color: #FD4328;
     color: #FFF;
     border: none;
+    border: 1px solid #FD4328;
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 600;
     line-height: 26px;
     letter-spacing: 0em;
+    transition: all .5s;
+}
+
+.order__btn:hover {
+    background: none;
+    color: #FD4328;
+    transition: all .5s;
 }
 
 .package__card-container {
@@ -3696,12 +3734,13 @@ textarea::-webkit-resizer {
     max-height: 0px;
     visibility: hidden;
     position: absolute;
+    overflow: hidden;
 }
 
 .sectionPechati__section-list li:hover ul {
     max-height: 2000px;
     visibility: visible;
-    transition: max-height 1s;
+    transition: max-height 5s;
     position: static;
 }
 
@@ -3902,7 +3941,8 @@ textarea::-webkit-resizer {
     opacity: 1;
 }
 
-.swiper-slide img {
+.detailSwiper .swiper-slide img,
+.detailSwiper2 .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
@@ -3911,6 +3951,8 @@ textarea::-webkit-resizer {
 
 .detailPechati__container {
     display: flex;
+    gap: 20px;
+    justify-content: end;
 }
 
 .detailPechati__swiper-container {
@@ -3934,6 +3976,369 @@ textarea::-webkit-resizer {
 
 .detailSwiper {
     padding: 0;
+    height: 80px;
 }
 
-/* доделывай свайпер и далее */
+.detailSwiper .swiper-slide {
+    margin-right: 0;
+    width: 80px;
+    border: 1px solid #D1D5DB;
+    padding: 8px;
+    border-top: none;
+}
+
+.detailSwiper .swiper-slide img {
+    object-fit: contain;
+}
+
+.detailPechati__price {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 410px;
+}
+
+.detailPechati__price-container {
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+}
+
+.detailPechati__price-container h2 {
+    font-family: DIN Pro;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.detailPechati__price-container .baner__btn {
+    max-width: 190px;
+    margin-top: 22px;
+}
+
+.detailPechati__price-time {
+    margin-top: auto;
+    padding: 20px 35px;
+    border: 2px solid #D1D5DB;
+    background-color: #F3F4F6;
+}
+
+.detailPechati__price-time h3 {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.detailPechati__price-time p {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.detailPechati__price-time span {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.detailPechati__price_bottom-text {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #6B7280;
+    margin-top: auto;
+}
+
+@media (max-width: 1032px) {
+    .detailPechati__container {
+        flex-direction: column;
+    }
+
+    .detailPechati__price-container {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .detailPechati__price-time {
+        margin-top: 30px;
+    }
+
+    .detailPechati__price_bottom-text {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 616px) {
+    .detailSwiper2 {
+        width: 335px;
+        height: 310px;
+    }
+
+    .detailSwiper2 .swiper-slide {
+        padding: 25px;
+    }
+
+    .detailSwiper {
+        width: 335px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 432px) {
+    .detailPechati__price-time p {
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        white-space: wrap;
+    }
+
+    .detailPechati__price-time span {
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        white-space: wrap;
+    }
+}
+
+@media (max-width: 370px) {
+    .detailSwiper2 {
+        width: 285px;
+        height: 265px;
+    }
+
+    .detailSwiper2 .swiper-slide {
+        padding: 25px;
+    }
+
+    .detailSwiper {
+        width: 285px;
+        height: 65px;
+    }
+}
+
+.description .swiper__container {
+    margin-bottom: 35px;
+    max-width: 1290px;
+    border-bottom: 2px solid #D1D5DB;
+    padding: 0;
+    overflow: visible;
+}
+
+.descriptionSwiper .swiper-wrapper {
+    gap: 100px;
+    margin-bottom: -1px;
+}
+
+.descriptionSwiper .swiper-slide {
+    width: auto;
+    justify-content: start;
+}
+
+.descriptionSwiper p {
+    font-family: DIN Pro;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: -1px;
+    cursor: pointer;
+    padding-bottom: 18px;
+}
+
+.descriptionSwiper .description_active {
+    cursor: default;
+}
+
+.description_active {
+    color: #FD4328;
+    border-bottom: 3px solid #FD4328;
+}
+
+.descriptionSwiper p:hover {
+    color: #FD4328;
+    border-bottom: 3px solid #FD4328;
+}
+
+.description__text-container {
+    width: 100%;
+    max-width: 850px;
+}
+
+.description__text-container div p {
+    margin-bottom: 35px;
+}
+
+.description__text-container .docs-table p {
+    margin: 0;
+}
+
+.description__box {
+    width: 100%;
+    max-width: 1290px;
+    margin: 0 auto;
+}
+
+.description__box .docs-table {
+    padding: 0 0 70px;
+}
+
+.description__box .docs-table p {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+@media (max-width: 615px) {
+    .descriptionSwiper .swiper-wrapper {
+        gap: 0;
+    }
+}
+
+.baner-poligraf {
+    background-position-y: 60px;
+}
+
+.baner-poligraf .baner__container {
+    padding: 50px 0;
+}
+
+.baner-poligraf .baner__container h1 {
+    max-width: 570px;
+}
+
+.baner-poligraf .baner__container ul {
+    margin-top: 10px;
+    max-width: 480px;
+}
+
+.baner-poligraf .baner__container li {
+    display: flex;
+    gap: 10px;
+    align-items: start;
+    margin-top: 20px;
+}
+
+.baner-poligraf .baner__container li:first-of-type {
+    margin: 0;
+}
+
+.baner-poligraf .baner__container img {
+    object-fit: contain;
+    width: 18px;
+    height: 18px;
+}
+
+.baner-poligraf .baner__container p {
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+@media (max-width: 892px) {
+    .baner-poligraf {
+        height: auto;
+    }
+
+    .baner-poligraf .baner__container {
+        margin-bottom: 135px;
+    }
+
+    .baner-poligraf {
+        background-position-y: 95%;
+    }
+}
+
+.visitki .sectionPechati__grid-container {
+    grid-template-columns: 300px 300px 300px 300px;
+}
+
+.examples {
+    flex-direction: column;
+}
+
+.examples h2 {
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 100%;
+    max-width: 1290px;
+    margin: 0 auto 20px;
+}
+
+.detailVisitki .detailSwiper2 .swiper-slide {
+    padding: 0;
+}
+
+.detailVisitki .detailSwiper .swiper-slide {
+    padding: 0;
+}
+
+.detailVisitki .detailSwiper .swiper-slide img {
+    object-fit: cover;
+}
+
+.detailVisitki .detailPechati__price-time {
+    margin-top: 20px;
+}
+
+.detailVisitki .detailPechati__price-time p {
+    white-space: wrap;
+}
+
+.detailVisitki .header__callback-btn {
+    max-width: 150px;
+    margin-top: 15px;
+}
+
+.detailVisitki .detailPechati__price-time:last-of-type {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.detailVisitki .detailPechati__price-time span {
+    color: #FD4328;
+}
+
+@media (max-width: 533px) {
+    .detailVisitki .header__callback-btn {
+        visibility: visible;
+        height: auto;
+        width: 100%;
+        position: static;
+    }
+}

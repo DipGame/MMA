@@ -3829,6 +3829,11 @@ textarea::-webkit-resizer {
 }
 
 .pagin button {
+    background: none;
+    border: none;
+}
+
+.pagin button a {
     font-family: DIN Pro;
     font-size: 16px;
     font-weight: 500;
@@ -3836,12 +3841,11 @@ textarea::-webkit-resizer {
     letter-spacing: 0em;
     text-align: left;
     color: #111827;
-    background: none;
-    border: none;
 }
 
-.pagin .pagin__disabled {
+.pagin .pagin__disabled a {
     color: #9CA3AF;
+    cursor: default;
 }
 
 .pagin ul {
@@ -3883,6 +3887,7 @@ textarea::-webkit-resizer {
 
 .pagin__active a {
     color: #FFF;
+    cursor: default;
 }
 
 @media (max-width: 1274px) {
@@ -4341,4 +4346,206 @@ textarea::-webkit-resizer {
         width: 100%;
         position: static;
     }
+}
+
+.ymaps-2-1-79-map-copyrights-promo {
+    visibility: hidden;
+}
+
+[class*="ymaps-2"][class*="-ground-pane"] {
+    filter: url(#grayscale);
+    -webkit-filter: grayscale(100%);
+    z-index: 5;
+}
+
+.ymaps-2 {
+    height: 490px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.contacts {
+    padding-top: 41px;
+    border-bottom: 2px solid #D1D5DB;
+    padding-bottom: 25px;
+}
+
+.contacts__box {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1290px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.contacts__card {
+    display: flex;
+    gap: 10px;
+    align-items: start;
+}
+
+.contacts__card img {
+    object-fit: contain;
+    width: 35px;
+    height: 35px;
+}
+
+.contacts__card h2 {
+    font-family: DIN Pro;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.contacts__card ul {
+    margin-top: 15px;
+    width: 100%;
+    max-width: 260px;
+}
+
+.contacts__card li {
+    margin-top: 10px;
+}
+
+.contacts__card a {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.contacts__card .contacts__bold-link {
+    font-family: DIN Pro;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+@media (max-width: 1131px) {
+    .contacts__box {
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 531px) {
+    .contacts__box {
+        grid-template-columns: auto;
+        justify-content: start;
+    }
+}
+
+.recvizit {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1290px;
+    display: flex;
+    justify-content: center;
+}
+
+.recvizit .detailPechati__price-time {
+    width: 100%;
+    max-width: 630px;
+    padding: 70px 38px 70px 70px;
+    margin: 50px 0;
+}
+
+.recvizit .detailPechati__price-time h3 {
+    font-family: DIN Pro;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.recvizit .detailPechati__price-time p {
+    white-space: wrap;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.recvizit .detailPechati__price-time button {
+    margin-top: 30px;
+}
+
+@media (max-width: 533px) {
+    .recvizit .detailPechati__price-time .header__callback-btn {
+        visibility: visible;
+        height: 50px;
+        width: 220px;
+        position: static;
+    }
+
+    .recvizit .detailPechati__price-time {
+        padding: 40px 30px;
+    }
+}
+
+.maket .services__card {
+    align-items: start;
+    background-size: cover;
+    height: 320px;
+}
+
+.maket .services__container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 410px 410px 410px;
+    grid-template-rows: none;
+    gap: 30px;
+}
+
+.maket .services__card a {
+    width: 100%;
+    height: 100%;
+}
+
+.section-link {
+    width: 100%;
+    max-width: 1290px;
+    margin: 40px auto 0;
+}
+
+.section-link ul {
+    display: flex;
+    gap: 20px;
+}
+
+.section-link a {
+    box-sizing: border-box;
+    padding: 12px 30px;
+    border: 1px solid #FD4328;
+    border-radius: 7px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FD4328;
+    transition: all .5s;
+}
+
+.section-link .section_active {
+    color: #FFF;
+    background-color: #FD4328;
+}
+
+.section-link a:hover {
+    color: #FFF;
+    background-color: #FD4328;
+    transition: all .5s;
 }
